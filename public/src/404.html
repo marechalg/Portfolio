@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>[404] Page Introuvable</title>
+    </head>
+
+    <body>
+        <section>
+            <img src="../img/404.jpg" alt="404 error">
+            <article>
+                <h1>Erreur 404</h1>
+                <h2>La page recherchée est introuvable !</h2>
+            </article>
+        </section>
+
+        <button id="btn-home">Retour à l'Acceuil</button>
+
+        <style>
+            
+        </style>
+
+        <script>
+            document.getElementById('btn-home').addEventListener('click', () => {
+                location.href = '/';
+            })
+        </script>
+    </body>
+</html>

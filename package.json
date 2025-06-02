@@ -1,0 +1,15 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "author": "Guéwen Maréchal",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "moment": "^2.30.1"
+  }
+}
