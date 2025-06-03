@@ -18,7 +18,7 @@ app.use((req, res) => {
 app.listen(PORT, () => {
     adlog('log', 'express', `Server is running on http://localhost:${PORT}`);
 })
-
+ 
 // Custom ALS (Advanced Log System)
 const LOG_NORMALIZER = 30;
 const COLORS = {
