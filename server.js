@@ -52,3 +52,5 @@ function adlog(type, from, message) {
             break;
     }
 }
+
+module.exports = { adlog };
