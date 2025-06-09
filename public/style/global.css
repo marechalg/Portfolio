@@ -14,7 +14,7 @@ body {
     background:
     repeating-conic-gradient(from 30deg, #0000 0 120deg, #0d0a25 0 180deg) 
      calc(.5 * var(--background-size)) calc(.5*var(--background-size) * 0.577),
-    repeating-conic-gradient(from 30deg, #090621 0 60deg, #0c0924 0 120deg, #0b0823 0 180deg);
+    repeating-conic-gradient(from 30deg, #090621 0 60deg, #0b0823 0 120deg, #090621 0 180deg);
     background-size: var(--background-size) calc(var(--background-size) * 0.577);
 
     color: var(--color-font);
