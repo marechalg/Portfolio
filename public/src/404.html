@@ -4,23 +4,59 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>[404] Page Introuvable</title>
+        <link rel="icon" href="../media/error.png">
     </head>
-
     <body>
         <section>
-            <img src="../img/404.jpg" alt="404 error">
+            <img src="../media/404.png" alt="404">
             <article>
                 <h1>Erreur 404</h1>
                 <h2>La page recherchée est introuvable !</h2>
+                <button id="btn-home">Retour à l'Acceuil</button>
             </article>
         </section>
-
-        <button id="btn-home">Retour à l'Acceuil</button>
-
         <style>
-            
+            * {
+                user-select: none;
+            }
+            body {
+                margin: 5%;
+                padding: 0;
+                font-family: Helvetica, Arial, sans-serif;
+                background: repeating-conic-gradient(from 30deg, #0000 0 120deg, #0d0a25 0 180deg) calc(.5 * 200px) calc(.5 * 200px * 0.577), repeating-conic-gradient(from 30deg, #090621 0 60deg, #0b0823 0 120deg, #090621 0 180deg);
+                background-size: 200px calc(200px * 0.577);
+                color: #efefff;
+                overflow: hidden;
+            }
+            section {
+                display: flex;
+                align-items: flex-start;
+                width: 80%;
+            }
+            article {
+                font-size: 250%;
+                margin-left: 5%;
+            }
+            img {
+                margin-top: -1em;
+            }
+            button {
+                background-color: #dea152;
+                color: #0d0a25;
+                border: solid 3px transparent;
+                border-radius: 10px;
+                font-size: 100%;
+                font-weight: bold;
+                padding: 0.5em;
+                text-align: center;
+                transition: all 0.3s;
+            }
+            button:hover {
+                background-color: transparent;
+                border-color: #dea152;
+                color: #dea152;
+            }
         </style>
-
         <script>
             document.getElementById('btn-home').addEventListener('click', () => {
                 location.href = '/';
