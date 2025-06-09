@@ -13,6 +13,6 @@ nvm install node
 
 cd /home/rasp/Desktop/portfolio/portfolio
 
-git pull https://github.com/marechalg/portfolio.git
+git pull https://github.com/marechalg/portfolio.git -f
 
 node .
