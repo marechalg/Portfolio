@@ -6,6 +6,36 @@
     --background-size: 200px;
 }
 
+@media screen and (orientation: landscape) {
+    .index {
+        overflow: hidden;
+    }
+    .index footer {
+        position: absolute;
+        bottom: 0; left: 0;
+    }
+    nav ul {
+        display: flex;
+    }
+    section {
+        flex-direction: row;
+    }
+}
+@media screen and (orientation: portrait) {
+    .index {
+        overflow: visible;
+    }
+    .index footer {
+        position: relative;
+    }
+    nav ul {
+        display: none;
+    }
+    section {
+        flex-direction: column;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -15,14 +45,6 @@ body {
     background-size: var(--background-size) calc(var(--background-size) * 0.577);
 
     color: var(--color-font);
-}
-
-.index {
-    overflow: hidden;
-}
-.index footer {
-    position: absolute;
-    bottom: 0; left: 0;
 }
 
 img, hr, br, h1, button, li.here, a, .cp {
@@ -55,7 +77,7 @@ ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 30%;
+    width: 40%;
 }
 
 a:hover, li.here {
