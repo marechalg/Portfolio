@@ -11,7 +11,8 @@ fetch('../data/projects.json').then(response => {
             document.getElementById(category).innerHTML += `
 
 <article>
-    <p>${project.name}</p>
+    <h3>${project.name}</h3>
+    <p>${project.description}</p>
 </article>
 
             `

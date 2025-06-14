@@ -1,14 +1,29 @@
 [
     {
         "name": "Portfolio",
+        "description": "Site descriptif et representatif de moi et de mes mes différents projets (personnels ou encadrés), formations, diplômes et activités. Vous y êtes !",
         "categories": [
             "rea"
         ],
         "technologies": [
-            "WEB",
+            "HTML",
+            "CSS",
+            "JavaScript",
             "HTTP",
             "Node.JS",
             "Express"
+        ]
+    }, {
+        "name": "Site JO - BMX Racing",
+        "categories": [
+            "rea",
+            "col"
+        ],
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Figma"
         ]
     }
 ]
