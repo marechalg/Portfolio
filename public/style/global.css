@@ -1,3 +1,7 @@
+/*--------------------*/
+/*------VARIABLES-----*/
+/*--------------------*/
+
 :root {
     --color-bg: #0d0a25;
     --color-bg-alt: #1f2c67;
@@ -5,6 +9,10 @@
     --color-accent: #dea152;
     --background-size: 200px;
 }
+
+/*--------------------*/
+/*-----RESPONSIVE-----*/
+/*--------------------*/
 
 @media screen and (orientation: landscape) {
     .index {
