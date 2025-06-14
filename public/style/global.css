@@ -146,9 +146,6 @@ div.burger:hover div:nth-child(5) {
 div.burger.clicked {
     transition: all 0.3s;
 }
-div.burger.clicked:hover {
-    transform: rotate(45deg);
-}
 
 /*--------------------*/
 /*--------ASIDE-------*/
@@ -188,9 +185,9 @@ aside img:first-child {
 /*--------------------*/
 
 section {
-    padding: 5em;
+    padding: 4em;
     display: flex;
-    width: 75%;
+    width: 85%;
     justify-content: space-between;
 }
 
