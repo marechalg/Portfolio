@@ -7,8 +7,7 @@
             "rea"
         ],
         "technologies": [
-            "HTML",
-            "CSS",
+            "HTML / CSS",
             "JavaScript",
             "HTTP",
             "Node.JS",
@@ -17,16 +16,16 @@
     }, {
         "name": "Site JO - BMX Racing",
         "description": "Site",
-        "icon": "",
+        "icon": "../media/jo.png",
         "categories": [
             "rea",
             "col"
         ],
         "technologies": [
-            "HTML",
-            "CSS",
+            "HTML / CSS",
             "JavaScript",
-            "Figma"
+            "Figma",
+            "Gesion de Projet"
         ]
     }
 ]

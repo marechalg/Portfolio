@@ -7,6 +7,15 @@ fetch('../data/projects.json').then(response => {
     const projects = data;
 
     for (const project of projects) {
+        let technologies = ``;
+        for (const technologie of projects.technologies) {
+            technologies.concat(`
+
+<div>${technologie}</div>
+
+            `)
+        }
+
         for (const category of project.categories) {
             document.getElementById(category).innerHTML += `
 
@@ -17,6 +26,8 @@ fetch('../data/projects.json').then(response => {
             <h3>${project.name}</h3>
         </figcaption>
     </figure>
+    <h3>Technologies Associées</h3>
+    ${technologies}
     <button>En savoir plus</button>
 </article>
 
