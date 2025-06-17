@@ -1,1 +1,8 @@
+- [ ] end about page
+- [ ] list every projects
 - [ ] sort project technologies automatically
+- [ ] optimize css file(s)
+- [ ] url redirection to simplify search
+- [ ] use php to retrieve files from the server
+- [ ] use apache
+- [ ] use https
