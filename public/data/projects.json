@@ -1,7 +1,8 @@
 [
     {
         "name": "Portfolio",
-        "description": "Site descriptif et representatif de moi et de mes mes différents projets (personnels ou encadrés), formations, diplômes et activités. Toutes les informations nécessaires pour me contacter sont repertoriées.",
+        "description": "Site descriptif et representatif de moi et de mes différents projets (personnels ou encadrés), formations, diplômes et activités. Toutes les informations nécessaires pour me contacter y sont également repertoriées.",
+        "icon": "",
         "categories": [
             "rea"
         ],
