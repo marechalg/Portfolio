@@ -12,7 +12,7 @@
             "HTML / CSS",
             "HTTP",
             "JavaScript",
-            "Node.JS"
+            "Node"
         ],
         "perso": false
     }, {
@@ -39,7 +39,7 @@
         "technologies": [
             "JavaScript",
             "MongoDB",
-            "Node.JS"
+            "Node"
         ],
         "perso": true
     }
