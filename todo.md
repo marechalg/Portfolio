@@ -1,5 +1,6 @@
 - [ ] end about page
 - [ ] list every projects
+- [ ] change emojis for icons
 - [ ] sort project technologies automatically
 - [ ] optimize css file(s)
 - [ ] url redirection to simplify search
