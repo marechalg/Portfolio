@@ -197,6 +197,9 @@ body.index section {
     width: 85%;
     justify-content: space-between;
 }
+body.index h1 {
+    user-select: none;
+}
 
 body.projects main {
     display: flex;
@@ -248,9 +251,13 @@ body.projects button {
 
 body.about section {
     padding: 4em;
+    justify-self: center;
+    justify-self: center;
+}
+body.about button {
+    width: fit-content;
 }
 body.about section.about {
-    justify-self: center;
     width: 85%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -296,6 +303,14 @@ body.about article h3 {
 body.about article p {
     font-size: 120%;
     line-height: 125%;
+}
+body.about article.cv {
+    text-align: center;
+    justify-content: center;
+}
+body.about article.cv h2 {
+    color: var(--color-accent);
+    font-weight: bold;
 }
 
 article.pres {
