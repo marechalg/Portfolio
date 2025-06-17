@@ -226,10 +226,10 @@ body.projects section article:hover {
     transform: translateY(-0.5em);
 }
 
-section.index article:nth-child(1) {
+article.pres {
     line-height: 150%;
 }
-section.index article:nth-child(2) {
+article.par {
     width: 35%;
     background-color: var(--color-bg-alt);
     font-size: x-large;
