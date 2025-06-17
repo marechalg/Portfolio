@@ -242,6 +242,62 @@ body.projects button {
     font-size: 100%;
 }
 
+/*--------------------*/
+/*--------ABOUT-------*/
+/*--------------------*/
+
+body.about section {
+    padding: 4em;
+}
+body.about section.about {
+    justify-self: center;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4em;
+}
+body.about article {
+    padding: 2em;
+    background-color: var(--color-bg-alt);
+    border: solid 3px var(--color-accent);
+    border-radius: 30px;
+}
+body.about article.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+body.about article.profile img {
+    max-width: 12em;
+    max-height: 12em;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 3px solid var(--color-accent);
+    margin-bottom: 3em;
+}
+body.about article.profile figcaption {
+    font-size: 200%;
+    font-weight: bold;
+    user-select: none;
+}
+body.about article h2 {
+    color: var(--color-accent);
+    font-style: normal;
+    user-select: none;
+}
+body.about article h3 {
+    font-style: italic;
+    font-weight: lighter;
+    color: #dfdfff;
+    font-size: 150%;
+}
+body.about article p {
+    font-size: 120%;
+    line-height: 125%;
+}
+
 article.pres {
     line-height: 150%;
 }
