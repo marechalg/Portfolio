@@ -8,12 +8,14 @@
             "adm"
         ],
         "technologies": [
+            "Bash",
             "Express",
             "HTML / CSS",
             "HTTP",
             "JavaScript",
             "Node"
         ],
+        "collaborators": [],
         "perso": false
     }, {
         "name": "Site JO - BMX Racing",
@@ -28,6 +30,11 @@
             "HTML / CSS",
             "JavaScript"
         ],
+        "collaborators": [
+            "PHILIPPO Clément",
+            "LOUIS--RENAULT Titouan",
+            "CHELLALI Yanis"
+        ],
         "perso": false
     }, {
         "name": "Countrydex",
@@ -36,11 +43,100 @@
         "categories": [
             "per"
         ],
+        "collaborators": [],
         "technologies": [
+            "Discord",
             "JavaScript",
             "MongoDB",
             "Node"
         ],
         "perso": true
+    }, {
+        "name": "InterChat",
+        "description": "Discutez avec le monde entier",
+        "icon": "../media/earth.png",
+        "categories": [
+            "per"
+        ],
+        "collaborators": [],
+        "technologies": [
+            "Discord",
+            "JavaScript",
+            "MongoDB",
+            "Node"
+        ],
+        "perso": true
+    }, {
+        "name": "Formule 4 All",
+        "description": "Monoplace à roues libres de sport adaptée pour tous.",
+        "icon": "../media/f1.png",
+        "categories": [
+            "opt",
+            "rea",
+            "col",
+            "con"
+        ],
+        "collaborators": [],
+        "technologies": [
+            "Arduino",
+            "Bash",
+            "C++",
+            "Diagramme d'Exigences",
+            "Électronique",
+            "HTML / CSS",
+            "HTTP",
+            "JavaScript",
+            "UART"
+        ],
+        "perso": false
+    }, {
+        "name": "SEMA",
+        "description": "P2P E2E serverless mesaging app",
+        "icon": "../media/msg.png",
+        "categories": [
+            "per"
+        ],
+        "collaborators": [],
+        "technologies": [
+            "CSS",
+            "Java",
+            "JavaFX",
+            "Libsodium",
+            "Rust",
+            "SceneBuilder",
+            "WebRTC"
+        ],
+        "perso": true
+    }, {
+        "name": "Snake",
+        "description": "jeu snake executable dans un terminal linux",
+        "icon": "../media/snake.png",
+        "categories": [
+            "rea",
+            "con"
+        ],
+        "collaborators": [],
+        "technologies": [
+            "C",
+            "Cahier de Tests",
+            "Doxygen"
+        ],
+        "perso": false
+    }, {
+        "name": "Snake Autonome",
+        "description": "jeu snake autonome executable dans un terminal linux, avec déplacements optimisés",
+        "icon": "../media/brain.png",
+        "categories": [
+            "rea",
+            "col",
+            "opt"
+        ],
+        "collaborators": [
+            "HILAIRE Kaëlig"
+        ],
+        "technologies": [
+            "C"
+        ],
+        "perso": false
     }
 ]
