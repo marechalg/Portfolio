@@ -247,6 +247,26 @@ body.projects button {
     width: fit-content;
     font-size: 100%;
 }
+body.projects article h4 {
+    margin-left: 1em;
+}
+div.techs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+div.techs div {
+    margin-left: 1em;
+    font-size: 90%;
+    background: linear-gradient(45deg, var(--color-bg-alt), var(--color-accent));
+    border-radius: 30px;
+    padding: 1em;
+    transition: background 0.3s;
+    user-select: none;
+}
+div.techs div:hover {
+    background: linear-gradient(45deg, var(--color-accent), var(--color-bg-alt));
+}
 
 /*--------------------*/
 /*--------ABOUT-------*/

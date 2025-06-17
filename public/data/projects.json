@@ -7,11 +7,11 @@
             "rea"
         ],
         "technologies": [
+            "Express",
             "HTML / CSS",
-            "JavaScript",
             "HTTP",
-            "Node.JS",
-            "Express"
+            "JavaScript",
+            "Node.JS"
         ]
     }, {
         "name": "Site JO - BMX Racing",
@@ -22,10 +22,10 @@
             "col"
         ],
         "technologies": [
-            "HTML / CSS",
-            "JavaScript",
             "Figma",
-            "Gesion de Projet"
+            "Gesion de Projet",
+            "HTML / CSS",
+            "JavaScript"
         ]
     }
 ]
