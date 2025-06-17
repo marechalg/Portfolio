@@ -16,10 +16,12 @@ fetch('../data/projects.json').then(response => {
             `;
         }
 
+        clas = project.perso ? 'perso' : 'pasperso';
+
         for (const category of project.categories) {
             document.getElementById(category).innerHTML += `
 
-<article>
+<article class="${clas}">
     <figure>
         <img src="${project.icon}" alt="${project.name}">
         <figcaption>

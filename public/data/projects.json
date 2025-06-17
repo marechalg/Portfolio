@@ -4,7 +4,8 @@
         "description": "Site descriptif et representatif de moi et de mes différents projets (personnels ou encadrés), formations, diplômes et activités. Toutes les informations nécessaires pour me contacter y sont également repertoriées.",
         "icon": "../media/portfolio.png",
         "categories": [
-            "rea"
+            "rea",
+            "adm"
         ],
         "technologies": [
             "Express",
@@ -12,7 +13,8 @@
             "HTTP",
             "JavaScript",
             "Node.JS"
-        ]
+        ],
+        "perso": false
     }, {
         "name": "Site JO - BMX Racing",
         "description": "Site",
@@ -23,9 +25,22 @@
         ],
         "technologies": [
             "Figma",
-            "Gesion de Projet",
             "HTML / CSS",
             "JavaScript"
-        ]
+        ],
+        "perso": false
+    }, {
+        "name": "Countrydex",
+        "description": "Capturez les drapeaux",
+        "icon": "../media/flag.png",
+        "categories": [
+            "per"
+        ],
+        "technologies": [
+            "JavaScript",
+            "MongoDB",
+            "Node.JS"
+        ],
+        "perso": true
     }
 ]

@@ -211,7 +211,8 @@ body.projects section {
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
     column-gap: 4em;
-    padding: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 body.projects section h2 {
     grid-column: span 2;
@@ -224,9 +225,19 @@ body.projects section article {
     transition: all 0.3s;
     height: fit-content;
     font-size: 125%;
+    position: relative;
+    margin-bottom: 2em;
+    z-index: 1; /* Ensure the article is on top of the ::before pseudo-element */
+}
+body.projects section article.perso {
+    border-color: var(--color-font);
 }
 body.projects section article:hover {
     transform: translateY(-0.5em);
+}
+
+body.projects main {
+    margin-bottom: 2em;
 }
 
 body.projects figure {
@@ -258,14 +269,15 @@ div.techs {
 div.techs div {
     margin-left: 1em;
     font-size: 90%;
-    background: linear-gradient(45deg, var(--color-bg-alt), var(--color-accent));
+    background: linear-gradient(40deg, var(--color-bg), var(--color-accent));
     border-radius: 30px;
     padding: 1em;
-    transition: background 0.3s;
+    transition: all 0.3s;
     user-select: none;
+    margin-bottom: 1em;
 }
 div.techs div:hover {
-    background: linear-gradient(45deg, var(--color-accent), var(--color-bg-alt));
+    filter: invert(1);
 }
 
 /*--------------------*/
