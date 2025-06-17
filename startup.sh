@@ -15,4 +15,8 @@ cd /home/rasp/Desktop/portfolio/portfolio
 
 git pull https://github.com/marechalg/portfolio.git -f
 
+echo "{ \"DEEPL_API_KEY\": \"" > config.json
+cat ../deeplapikey.txt >> config.json
+echo "\" }" >> config.json
+
 node .
