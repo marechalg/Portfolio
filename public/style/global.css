@@ -53,7 +53,7 @@
     }
     .projects section {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
     .projects section h2 {
         grid-column: span 1;
@@ -360,6 +360,29 @@ body.about article.cv {
 }
 body.about article.cv h2 {
     color: var(--color-accent);
+    font-weight: bold;
+}
+
+body.about section.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 85%;
+    gap: 4em;
+}
+body.about section.form h2 {
+    grid-column: span 2;
+    color: var(--color-accent);
+    font-style: normal;
+    justify-self: center;
+    font-weight: bold;
+}
+body.about section.form article div {
+    background-color: var(--color-accent);
+    border-radius: 30px;
+    color: var(--color-bg);
+    width: fit-content;
+    padding: 1em;
+    user-select: none;
     font-weight: bold;
 }
 
