@@ -11,8 +11,13 @@ fetch('../data/projects.json').then(response => {
             document.getElementById(category).innerHTML += `
 
 <article>
-    <h3>${project.name}</h3>
-    <p>${project.description}</p>
+    <figure>
+        <img src="${project.icon}" alt="${project.name}">
+        <figcaption>
+            <h3>${project.name}</h3>
+        </figcaption>
+    </figure>
+    <button>En savoir plus</button>
 </article>
 
             `

@@ -226,6 +226,22 @@ body.projects section article:hover {
     transform: translateY(-0.5em);
 }
 
+body.projects figure {
+    display: flex;
+    align-items: center;
+}
+body.projects figure img {
+    filter: brightness(0) invert(1);
+    width: 1.5em;
+    max-height: 1.5em;
+    object-fit: contain;
+    margin-right: 1em;
+}
+body.projects button {
+    width: fit-content;
+    font-size: 100%;
+}
+
 article.pres {
     line-height: 150%;
 }

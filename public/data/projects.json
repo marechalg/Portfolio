@@ -2,7 +2,7 @@
     {
         "name": "Portfolio",
         "description": "Site descriptif et representatif de moi et de mes différents projets (personnels ou encadrés), formations, diplômes et activités. Toutes les informations nécessaires pour me contacter y sont également repertoriées.",
-        "icon": "",
+        "icon": "../media/portfolio.png",
         "categories": [
             "rea"
         ],
@@ -16,6 +16,8 @@
         ]
     }, {
         "name": "Site JO - BMX Racing",
+        "description": "Site",
+        "icon": "",
         "categories": [
             "rea",
             "col"
