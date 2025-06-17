@@ -1,1 +1,1 @@
-[-] test
+- [ ] sort project technologies automatically
