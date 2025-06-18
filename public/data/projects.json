@@ -1,6 +1,7 @@
 [
     {
         "name": "Portfolio",
+        "id": "portfolio",
         "description": "Site descriptif et representatif de moi et de mes différents projets (personnels ou encadrés), formations, diplômes et activités. Toutes les informations nécessaires pour me contacter y sont également repertoriées.",
         "icon": "../media/portfolio.png",
         "categories": [
@@ -19,6 +20,7 @@
         "perso": false
     }, {
         "name": "Site JO - BMX Racing",
+        "id": "jo",
         "description": "Site",
         "icon": "../media/jo.png",
         "categories": [
@@ -38,6 +40,7 @@
         "perso": false
     }, {
         "name": "Countrydex",
+        "id": "countrydex",
         "description": "Capturez les drapeaux",
         "icon": "../media/flag.png",
         "categories": [
@@ -53,6 +56,7 @@
         "perso": true
     }, {
         "name": "InterChat",
+        "id": "interchat",
         "description": "Discutez avec le monde entier",
         "icon": "../media/earth.png",
         "categories": [
@@ -68,6 +72,7 @@
         "perso": true
     }, {
         "name": "Formule 4 All",
+        "id": "formule",
         "description": "Monoplace à roues libres de sport adaptée pour tous.",
         "icon": "../media/f1.png",
         "categories": [
@@ -91,6 +96,7 @@
         "perso": false
     }, {
         "name": "SEMA",
+        "id": "sema",
         "description": "P2P E2E serverless mesaging app",
         "icon": "../media/msg.png",
         "categories": [
@@ -109,6 +115,7 @@
         "perso": true
     }, {
         "name": "Snake",
+        "id": "snake",
         "description": "jeu snake executable dans un terminal linux",
         "icon": "../media/snake.png",
         "categories": [
@@ -124,6 +131,7 @@
         "perso": false
     }, {
         "name": "Snake Autonome",
+        "id": "snake2",
         "description": "jeu snake autonome executable dans un terminal linux, avec déplacements optimisés",
         "icon": "../media/brain.png",
         "categories": [
@@ -135,7 +143,56 @@
             "HILAIRE Kaëlig"
         ],
         "technologies": [
-            "C"
+            "C",
+            "Git"
+        ],
+        "perso": false
+    }, {
+        "name": "Java Bien",
+        "id": "javabien",
+        "description": "Application de gestion pour une association de danse fictive du nom de Ella'Danse. Développment de la partie de gestion des cours pour les professeurs.",
+        "icon": "../media/danse.png",
+        "categories": [
+            "rea",
+            "col",
+            "ger",
+            "con"
+        ],
+        "collaborators": [
+            "PHILIPPO Clément",
+            "BLEUZEN Thélio",
+            "RODRIGUES-MOREIRA Edgar"
+        ],
+        "technologies": [
+            "Diagramme de Classes",
+            "Gantt",
+            "Git",
+            "Java",
+            "JavaFX",
+            "Organigramme des Tâches",
+            "SceneBuilder"
+        ],
+        "perso": false
+    }, {
+        "name": "Configuration Serveur Web",
+        "id": "confweb",
+        "description": "Application de gestion pour une association de danse fictive du nom de Ella'Danse. Développment de la partie de gestion des cours pour les professeurs.",
+        "icon": "../media/web.png",
+        "categories": [
+            "adm",
+            "col"
+        ],
+        "collaborators": [
+            "PHILIPPO Clément",
+            "LARREUR Thomas",
+            "RODRIGUES-MOREIRA Edgar"
+        ],
+        "technologies": [
+            "Apache",
+            "HTML / CSS",
+            "HTTP",
+            "MySQL",
+            "PHP"
         ],
         "perso": false
     }

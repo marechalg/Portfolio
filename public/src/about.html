@@ -16,7 +16,8 @@
                     <li><a href="/">Acceuil</a></li>
                     <li class="here">À propos</li>
                     <li><a href="./projects.html">Projets</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="" id="contact">Contact</a></li>
+                    <script src="../script/nav.js"></script>
                 </ul>
                 <div class="burger" id="burger">
                     <div></div>
@@ -54,9 +55,17 @@
                     <h2>Curriculum Vitae</h2>
                     <p>Découvrez mon parcours, mes compétences techniques et mes expériences dans mon CV.</p>
                     <div>
-                        <button id="download">📄 Télécharger mon CV</button>
-                        <button id="consult">👁️ Consulter en ligne</button>
+                        <button type="button" id="download">📄 Télécharger mon CV</button>
+                        <button type="button" id="consult">👁️ Consulter en ligne</button>
                     </div>
+                    <div class="modal" id="cv-modal">
+                        <div class="modal-content">
+                            <button class="modal-close" id="modal-close">&times;</button>
+                             <iframe src="../cv_guewen_marechal_dev_opt_logiciel_systeme.pdf" title="Guéwen Maréchal" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <script src="../script/cv.js"></script>
                 </article>
             </section>
 
@@ -100,11 +109,56 @@
             </section>
 
             <section class="pass">
-                
+                <h2>Passions</h2>
+
+                <article>
+                    <figure>
+                        <img src="../media/dev.png" alt="Développement">
+                        <figcaption><h3>Programmation</h3></figcaption>
+                    </figure>
+                    <p>Développement de scripts et applications, exploration de nouveaux langages et frameworks</p>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="../media/music.jpg" alt="Euphonium">
+                        <figcaption><h3>Musique</h3></figcaption>
+                    </figure>
+                    <p>Pratique d'euphonium depuis 10 ans, dans l'Orchestre d'Harmonie de Saint-Brieuc depuis 4 ans, une association de 70 membres</p>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="../media/hardware.jpg" alt="Hardware">
+                        <figcaption><h3>Hardware</h3></figcaption>
+                    </figure>
+                    <p>Assemblage et optimisation de systèmes, exploration des nouvelles technologies</p>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="../media/vtt.png" alt="VTT">
+                        <figcaption><h3>Cyclisme</h3></figcaption>
+                    </figure>
+                    <p>Balades en Enduro dans les vallées, déplacements quotidiens</p>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="../media/sim.png" alt="Wheel">
+                        <figcaption><h3>Sim-Racing</h3></figcaption>
+                    </figure>
+                    <p>Courses sur simulateur automobile sur des jeux tels que IRacing, Assetto Corsa, ACC, Le Mans Ultimate ou les jeux licenciés F1, avec analyse de télémétries post-session</p>
+                </article>
             </section>
 
             <section class="comp">
+                <h2>Compétences Clés</h2>
+                <div id="comp">
 
+                </div>
+                <button type="button" id="vp">Voir Plus ▼</button>
+                <script src="../script/competences.js"></script>
             </section>
         </main>
 

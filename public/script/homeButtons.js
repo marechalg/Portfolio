@@ -1,5 +1,5 @@
 document.getElementById('about').addEventListener('click', () => {
-    window.open("about.html");
+    window.open("../src/about.html");
 })
 
 document.getElementById('contact').addEventListener('click', () => {
