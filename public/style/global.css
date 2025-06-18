@@ -602,3 +602,25 @@ footer li {
     align-content: center;
     text-align: center;
 }
+
+footer a {
+    align-content: center;
+    vertical-align: middle;
+}
+
+footer li {
+    display: flex;
+    align-items: center;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+}
+
+footer li img {
+    max-height: 3em;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    align-self: center;
+}
