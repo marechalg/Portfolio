@@ -10,8 +10,8 @@ fetch('../data/competences.json').then(response => {
     let i = 1;
 
     for (const competence of competences) {
-        const clas = i > 10 ? 'plus' : 'moins';
-        const dis = i > 10 ? 'none' : 'block';
+        const clas = i > 8 ? 'plus' : 'moins';
+        const dis = i > 8 ? 'none' : 'block';
         document.getElementById('comp').innerHTML += `
         
 <div class="${clas}" style="display: ${dis};">${competence}</div>

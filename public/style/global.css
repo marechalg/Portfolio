@@ -432,18 +432,20 @@ body.about section.comp {
 }
 body.about section.comp div#comp {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 4em;
 }
 body.about section.comp div div {
     text-align: center;
     background: linear-gradient(40deg, var(--color-bg-alt), var(--color-accent));
-    font-size: 200%;
+    width: 8em;
+    font-size: 150%;
     border-radius: 30px;
     padding: 1em;
     color: var(--color-bg);
     user-select: none;
     transition: all 0.3s;
+    align-content: center;
 }
 body.about section.comp div div:hover {
     filter: invert(1);
