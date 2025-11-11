@@ -1,7 +1,30 @@
 @import url(color.css);
+@import url(fonts.css);
 
 * {
     margin: 0;
+    transition: all 0.2s;
+}
+
+body {
+    background: repeating-conic-gradient(from 30deg, #0000 0 120deg, #0d0a25 0 180deg) calc(.5 * 200px) calc(.5 * 200px * 0.577), repeating-conic-gradient(from 30deg, #090621 0 60deg, #0b0823 0 120deg, #090621 0 180deg);
+    background-size: 200px calc(200px * 0.577);
+
+    font-family: quicksand;
+    color: var(--color-white);
+}
+
+h1, button, img {
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-white);
+}
+a:hover {
+    color: var(--color-orange);
 }
 
 /*----------------*/
@@ -12,8 +35,65 @@ header nav {
     display: flex;
     justify-content: space-between;
     background-color: var(--color-blue);
+    border-bottom: solid 2px var(--color-orange);
+    padding: 1em;
+    align-items: center;
 }
 
 header nav ul {
     display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 30%;
+}
+
+div.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2.5em;
+    width: 3em;
+}
+div.burger div {
+    height: 0.2em;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+div.burger div:nth-child(1) {
+    width: 2em;
+    background-color: #ff2222;
+}
+div.burger div:nth-child(2) {
+    width: 2.6em;
+    background-color: #00ffff;
+}
+div.burger div:nth-child(3) {
+    width: 2.3em;
+    background-color: var(--color-orange);
+}
+div.burger div:nth-child(4) {
+    width: 3em;
+    background-color: #22ff22;
+}
+div.burger div:nth-child(5) {
+    width: 1.6em;
+    background-color: #ff22aa;
+}
+div.burger:hover div {
+    width: 2em;
+}
+div.burger:hover div:nth-child(1) {
+    margin-right: 0em;
+}
+div.burger:hover div:nth-child(2) {
+    margin-right: 0.5em;
+}
+div.burger:hover div:nth-child(3) {
+    margin-right: 1em;
+}
+div.burger:hover div:nth-child(4) {
+    margin-right: 0.5em;
+}
+div.burger:hover div:nth-child(5) {
+    margin-right: 0em;
 }
