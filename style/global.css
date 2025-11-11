@@ -1,0 +1,19 @@
+@import url(color.css);
+
+* {
+    margin: 0;
+}
+
+/*----------------*/
+/*-----HEADER-----*/
+/*----------------*/
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-blue);
+}
+
+header nav ul {
+    display: flex;
+}
