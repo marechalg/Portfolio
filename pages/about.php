@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Guéwen Maréchal</title>
+    <title>À Prosos</title>
     <link rel="icon" href="/assets/icons/likoubra.png">
 
     <link rel="stylesheet" href="../styles/main.css">
@@ -15,13 +15,10 @@
 
     <?php
         $currentPage = basename(__FILE__);
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/header.php';
+        require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/header.php'
     ?>
 
-    <main>
-        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/aside.php' ?>
-
-    </main>
+    <main></main>
 
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/footer.php' ?>
 </body>

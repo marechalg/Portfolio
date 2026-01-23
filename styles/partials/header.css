@@ -13,20 +13,12 @@
         display: none;
         flex-direction: row;
     }
-
-    div.burger {
-        display: flex;
-    }
 }
 
 @media screen and (orientation: landscape) {
     ul {
         display: flex;
         flex-direction: row;
-    }
-    
-    div.burger {
-        display: none;
     }
 }
 
@@ -44,6 +36,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--color-blue);
+    border-bottom: solid 5px var(--color-orange);
 }
 
 nav ul {
@@ -66,6 +60,7 @@ a.here:hover {
 }
 
 div.burger {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 2.5em;
@@ -73,7 +68,7 @@ div.burger {
 }
 div.burger div {
     height: 0.2em;
-    border-radius: 10px;
+    border-radius: 8px;
     align-self: flex-end;
 }
 div.burger div:nth-child(1) {

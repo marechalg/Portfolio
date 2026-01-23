@@ -1,6 +1,6 @@
 <header>
     <nav>
-        <h1>Portfolio</h1>
+        <h1><a href="/">Portfolio</a></h1>
         <ul>
             <?php $class = $currentPage == 'home.php' ? 'here' : ''; ?>
             <li><a href="/" class="<?php echo $class ?>">Accueil</a></li>

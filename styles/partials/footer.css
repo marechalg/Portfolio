@@ -1,0 +1,23 @@
+/*********************/
+/* IMPORT STATEMENTS */
+/*********************/
+
+@import url(../colors.css);
+
+/*********/
+/* STYLE */
+/*********/
+
+footer {
+    background-color: var(--color-blue);
+    border-top: solid 5px var(--color-orange);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+copy {
+    text-align: right;
+    font-weight: bold;
+}

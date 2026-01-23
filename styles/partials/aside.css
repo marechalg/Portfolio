@@ -1,0 +1,16 @@
+aside {
+    padding: 1em;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30vh; right: 0;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    gap: 1em;
+}
+
+aside img {
+    filter: brightness(0) invert(1);
+    height: 3em;
+}
