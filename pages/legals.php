@@ -25,18 +25,17 @@
         <section>
             <h2>Éditeur du site</h1>
             <article>
-                <p><strong>Éditeur :</strong> Guéwen Maréchal</p>
+                <p><strong>Éditeur :</strong> Guéwen MARÉCHAL</p>
                 <p><strong>Résidence :</strong> France</p>
-                <p><strong>Email :</strong> guewen.marechal@etudiant.univ-rennes.fr</p>
-                <br>
-                <p><strong>Directeur de publication :</strong> Guéwen Maréchal</p>
+                <p><strong>Email :</strong> <a href="/contact" target="_blank">guewen.marechal@etudiant.univ-rennes.fr</a></p>
+                <p><strong>Directeur de publication :</strong> Guéwen MARÉCHAL</p>
             </article>
         </section>
 
         <section>
             <h2>Hébergement</h2>
             <article>
-                <p><strong>Hébergeur :</strong> Guéwen Maréchal</p>
+                <p><strong>Hébergeur :</strong> Guéwen MARÉCHAL</p>
                 <p><strong>Adresse du serveur :</strong> 89.89.92.38, France</p>
             </article>
         </section>
@@ -53,7 +52,7 @@
         <section>
             <h2>Propriété Intelectuelle</h2>
             <article>
-                <p>L'ensemble du contenu de ce site (textes, images, vidéos) est la propriété exclusive de Guéwen Maréchal, sauf mention contraire indiquée dans la section <a href="#credits">Crédits</a> ci-dessous.</p>
+                <p>L'ensemble du contenu de ce site (textes, images, vidéos) est la propriété exclusive de Guéwen MARÉCHAL, sauf mention contraire indiquée dans la section <a href="#credits">Crédits</a> ci-dessous.</p>
                 <p>Le code source de ce site est distribué sous Licence MIT et est disponible sur <a href="http://github.com/marechalg/Portfolio" target="_blank">GitHub</a>. Vous êtes libre de l'utiliser, le modifier et le distribuer selon les termes de cette licence.</p>
                 <p>Toute reproduction, distribution ou utilisation du contenu (hors code) sans autorisation préalable est interdite.</p>
             </article>
@@ -115,6 +114,8 @@
     </main>
 
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/footer.php' ?>
+
+    <script src="/scripts/legals.js" type="module"></script>
 </body>
 
 </html>
