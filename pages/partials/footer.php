@@ -42,5 +42,5 @@
 <footer>
     <?php $class = $currentPage == 'legals.php' ? 'here' : ''; ?>
     <a href="/legals" class="<?php echo $class ?>">Mentions Légales</a>
-    <copy>&copy; 2026 2026, G. Maréchal<br>Tous droits réservés</copy>
+    <copy>&copy; <?php echo date("Y") ?>, G. Maréchal<br>Tous droits réservés</copy>
 </footer>
