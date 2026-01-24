@@ -17,7 +17,7 @@
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/header.php'?>
 
     <main>
-        
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/aside.php' ?>
     </main>
 
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/footer.php' ?>

@@ -9,14 +9,14 @@
 /*****************/
 
 @media screen and (orientation: portrait), screen and (max-width: 950px) {
-    ul {
+    nav ul {
         display: none;
         flex-direction: row;
     }
 }
 
 @media screen and (orientation: landscape) and (min-width: 950px) {
-    ul {
+    nav ul {
         display: flex;
         flex-direction: row;
     }
@@ -41,12 +41,13 @@ nav {
 }
 
 nav ul {
+    list-style: none;
     justify-content: space-between;
     gap: 1em;
     width: 40%;
 }
 
-li {
+nav li {
     white-space: nowrap;
     font-size: 1.25em;
 }
