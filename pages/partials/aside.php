@@ -1,7 +1,7 @@
 <aside class="side">
     <a href="https://github.com/marechalg" target="_blank" rel="noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 20 20" version="1.1">
-            <title>Github</title>
+            <title>GitHub</title>
             <desc>Created with Sketch.</desc>
             <defs>
 

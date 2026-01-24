@@ -12,10 +12,16 @@
     section {
         width: 60%;
     }
+
+    p:not(article p) {
+        width: 60%;
+    }
 }
 
 @media screen and (orientation: portrait), screen and (max-width: 950px) {
-
+    p:not(article p) {
+        width: 80%;
+    }
 }
 
 /*********/
@@ -53,4 +59,8 @@ article {
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+
+p:not(article p) {
+    text-align: center;
 }
