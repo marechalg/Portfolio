@@ -1,3 +1,5 @@
+<?php $currentPage = basename(__FILE__) ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -12,13 +14,11 @@
 </head>
 
 <body>
+    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/header.php'?>
 
-    <?php
-        $currentPage = basename(__FILE__);
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/header.php'
-    ?>
-
-    <main></main>
+    <main>
+        
+    </main>
 
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/footer.php' ?>
 </body>
