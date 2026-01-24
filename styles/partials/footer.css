@@ -10,7 +10,7 @@
 
 footer {
     background-color: var(--color-blue);
-    border-top: solid 5px var(--color-orange);
+    border-top: solid 3px var(--color-orange);
     padding: 1em;
     display: flex;
     justify-content: space-between;

@@ -41,3 +41,11 @@ a {
 a:hover {
     color: var(--color-orange);
 }
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-weight: bold;
+}

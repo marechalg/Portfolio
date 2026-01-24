@@ -1,12 +1,38 @@
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+@media screen and (orientation: landscape) {
+    body {
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "footer";
+    }
+
+    aside {
+        grid-area: aside;
+    }
+}
+
+/*********/
+/* STYLE */
+/*********/
+
 body {
     display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    max-height: 100vh;
 }
 
 header {

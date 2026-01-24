@@ -9,6 +9,7 @@
     <link rel="icon" href="/assets/icons/likoubra.png">
 
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/home.css">
 </head>
 
 <body>
@@ -21,6 +22,20 @@
     <main>
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/aside.php' ?>
 
+        <section>
+            <article>
+                <h1>Guéwen Maréchal</h1>
+                <h2>Étudiant en BUT Informatique</h2>
+                <ul>
+                    <li><button>À Propos</button></li>
+                    <li><button>Contacter</button></li>
+                </ul>
+            </article>
+
+            <article>
+                <p>“ Étudiant en 2<sup>ème</sup> année de BUT Informatique, parcours développement d'application, je suis passionné par les scripts d’optimisation et de conception. Rigoureux et persévérant, je recherche un stage et une alternance en développement et optimisation logicielle ou système „</p>
+            </article>
+        </section>
     </main>
 
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/footer.php' ?>

@@ -1,16 +1,75 @@
-aside {
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+@media screen and (orientation: landscape) {
+    aside.side {
+        display: flex;
+    }
+
+    aside.bottom {
+        display: none;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    aside.side {
+        display: none;
+    }
+
+    aside.bottom {
+        display: flex;
+    }
+}
+
+/*********/
+/* STYLE */
+/*********/
+
+aside.side {
     padding: 1em;
     background-color: var(--color-black);
-    display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 30vh; right: 0;
+    position: sticky;
+    align-items: center;
+    width: 4em;
+    top: 30vh;
+    margin-left: auto;  /* Ajoutez ceci */
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     gap: 1em;
 }
-
-aside img {
-    filter: brightness(0) invert(1);
+aside.side svg {
     height: 3em;
+    width: 3em;
+}
+
+aside.bottom {
+    border-top: solid 3px var(--color-orange);
+    padding: 1em;
+    background-color: var(--color-black);
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+}
+aside.bottom svg {
+    height: 1em;
+    width: 1em;
+}
+aside.bottom a {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    gap: 0.5em;
+}
+
+
+aside svg path {
+    transition: all 0.2s ease;
+    fill: var(--color-white);
+}
+aside a:hover svg path {
+    color: var(--color-orange);
+    fill: var(--color-orange);
 }
