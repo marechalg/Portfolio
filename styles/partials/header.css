@@ -8,14 +8,14 @@
 /* MEDIA QUERIES */
 /*****************/
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait), screen and (max-width: 950px) {
     ul {
         display: none;
         flex-direction: row;
     }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (min-width: 950px) {
     ul {
         display: flex;
         flex-direction: row;
@@ -43,19 +43,12 @@ nav {
 nav ul {
     justify-content: space-between;
     gap: 1em;
-    width: 30%;
+    width: 40%;
 }
 
 li {
     white-space: nowrap;
     font-size: 1.25em;
-}
-
-a.here {
-    color: var(--color-orange);
-}
-a.here:hover {
-    cursor: default;
 }
 
 div.burger {

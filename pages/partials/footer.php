@@ -40,6 +40,7 @@
 </aside>
 
 <footer>
-    <a href="/legals">Mentions Légales</a>
+    <?php $class = $currentPage == 'legals.php' ? 'here' : ''; ?>
+    <a href="/legals" class="<?php echo $class ?>">Mentions Légales</a>
     <copy>&copy; 2026 2026, G. Maréchal<br>Tous droits réservés</copy>
 </footer>

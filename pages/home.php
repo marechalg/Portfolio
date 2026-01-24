@@ -27,8 +27,9 @@
                 <h1>Guéwen Maréchal</h1>
                 <h2>Étudiant en BUT Informatique</h2>
                 <ul>
-                    <li><button>À Propos</button></li>
-                    <li><button>Contacter</button></li>
+                    <li><button id="about">À Propos</button></li>
+                    <li><button id="contact">Contacter</button></li>
+                    <script src="/scripts/buttons.js"></script>
                 </ul>
             </article>
 

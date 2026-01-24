@@ -2,7 +2,7 @@
 /* MEDIA QUERIES */
 /*****************/
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (min-width: 950px) {
     body {
         grid-template-areas:
             "header"
@@ -11,7 +11,7 @@
     }
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait), screen and (max-width: 950px) {
     body {
         grid-template-areas:
             "header"
@@ -41,6 +41,8 @@ header {
 
 main {
     grid-area: main;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 footer {
