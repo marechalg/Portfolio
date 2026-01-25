@@ -11,6 +11,8 @@
 @import url(partials/aside.css);
 @import url(partials/footer.css);
 
+@import url(partials/up.css);
+
 /*****************/
 /* MEDIA QUERIES */
 /*****************/
@@ -32,6 +34,10 @@
 
     article {
         width: 100%;
+    }
+
+    button#up {
+        display: none;
     }
 }
 

@@ -111,11 +111,14 @@
         <p><em>Ces mentions légales peuvent être modifiées à tout moment pour refléter les évolutions du site ou de la législation. Il est conseillé de les consulter régulièrement.</em></p>
 
         <p><em>Dernière mise à jour : 24/01/2026</em></p>
+
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/up.php' ?>
     </main>
 
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/footer.php' ?>
 
     <script src="/scripts/legals.js" type="module"></script>
+    <script src="/scripts/up.js"></script>
 </body>
 
 </html>

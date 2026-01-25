@@ -10,7 +10,7 @@
     <title>Mes Projets</title>
     <link rel="icon" href="/assets/icons/likoubra.png">
 
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 
 <body>
@@ -21,6 +21,8 @@
     </main>
 
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/footer.php' ?>
+
+    <script src="/scripts/up.js"></script>
 </body>
 
 </html>

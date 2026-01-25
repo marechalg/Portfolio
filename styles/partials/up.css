@@ -1,0 +1,33 @@
+@import url(/styles/colors.css);
+@import url(/styles/fonts.css);
+
+button#up {
+    position: fixed;
+    transform: translateY(100px);
+    visibility: hidden;
+    opacity: 0;
+    bottom: 1em; right: 2em;
+    transition: all 0.2s ease;
+    width: 150px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: none;
+    padding: 1em;
+    color: var(--color-white);
+    font-weight: bold;
+    background-color: var(--color-blue);
+    border-radius: 16px;
+}
+
+button#up.visible {
+    transform: translateY(0);
+    opacity: 0.75;
+    visibility: visible;
+}
+
+button#up:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: var(--color-blue);
+    background-color: var(--color-orange);
+}

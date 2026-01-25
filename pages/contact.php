@@ -50,9 +50,13 @@
             
             <input type="submit" value="Envoyer">
         </form>
+
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/up.php' ?>
     </main>
 
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/footer.php' ?>
+
+    <script src="/scripts/up.js"></script>
 </body>
 
 </html>
