@@ -59,6 +59,11 @@
             </article>
         </section>
 
+        <dialog id="cv">
+            <button autofocus style="position:absolute;opacity:0;pointer-events:none"></button>
+            <iframe src="/assets/cv.pdf" frameborder="0" id="pdf"></iframe>
+        </dialog>
+
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/up.php' ?>
     </main>
 
@@ -66,6 +71,7 @@
 
     <script src="/scripts/parallaxe.js"></script>
     <script src="/scripts/up.js"></script>
+    <script src="/scripts/cv.js"></script>
 </body>
 
 </html>

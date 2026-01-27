@@ -168,3 +168,50 @@ h2 {
     font-style: italic;
     filter: brightness(0.9);
 }
+
+dialog {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    border: solid 3px var(--color-orange);
+    border-radius: 16px;
+    background-color: var(--color-dark-blue);
+    width: 60%;
+    height: 90vh;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.2s ease, display 0.2s allow-discrete, overlay 0.2s allow-discrete;
+}
+
+@starting-style {
+    dialog[open] {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+dialog:not([open]) {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(1px);
+    transition: all 0.2s ease, display 0.2s allow-discrete, overlay 0.2s allow-discrete;
+}
+
+@starting-style {
+    dialog[open]::backdrop {
+        background: rgba(0, 0, 0, 0);
+        backdrop-filter: blur(0);
+    }
+}
+
+dialog:not([open])::backdrop {
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0);
+}
+
+dialog iframe {
+    width: 100%;
+    height: 100%;
+}
