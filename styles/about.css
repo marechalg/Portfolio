@@ -1,0 +1,135 @@
+/*********************/
+/* IMPORT STATEMENTS */
+/*********************/
+
+@import url(colors.css);
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+@media screen and (orientation: landscape) and (min-width: 950px) {
+    section {
+        width: 80%;
+        gap: 4em;
+    }
+    
+    section.about ul article {
+        width: 45%;
+    }
+
+    article.cv ul {
+        flex-direction: row;
+    }
+    article.cv ul li {
+        width: 40%;
+    }
+}
+
+@media screen and (orientation: portrait), screen and (max-width: 950px) {
+    section {
+        gap: 2em;
+    }
+
+    article.cv ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article.cv ul li {
+        width: 100%;
+    }
+}
+
+/*********/
+/* STYLE */
+/*********/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.about ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+}
+section.about ul article:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 2em;
+    font-size: 1.25em;
+}
+
+figure .frame {
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    border: solid 3px var(--color-orange);
+    background-image: url(/assets/images/photo.jpg);
+    background-position: 50% 50%;
+    background-size: 150%;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+figcaption {
+    font-weight: bold;
+    user-select: none;
+    font-size: 1.5em;
+}
+
+button {
+    color: var(--color-blue);
+}
+button:hover {
+    background-color: var(--color-blue);
+}
+
+article {
+    padding: 2em;
+}
+
+article h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+article h1 {
+    padding-top: 0.5em;
+    color: var(--color-orange);
+    justify-self: center;
+}
+
+article.cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+}
+
+article.cv ul {
+    width: 100%;
+    display: flex;
+}
+
+article.cv button {
+    width: 100%;
+}
