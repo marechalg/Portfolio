@@ -18,7 +18,10 @@
 /*****************/
 
 @media screen and (orientation: landscape) and (min-width: 950px) {
-
+    dialog {
+        width: 60%;
+        height: 90vh;
+    }
 }
 
 @media screen and (orientation: portrait), screen and (max-width: 950px) {
@@ -38,6 +41,11 @@
 
     button#up {
         display: none;
+    }
+
+    dialog {
+        width: 80%;
+        height: 60vh;
     }
 }
 
@@ -176,8 +184,6 @@ dialog {
     border: solid 3px var(--color-orange);
     border-radius: 16px;
     background-color: var(--color-dark-blue);
-    width: 60%;
-    height: 90vh;
     padding: 0;
     overflow: hidden;
     transition: all 0.2s ease, display 0.2s allow-discrete, overlay 0.2s allow-discrete;
