@@ -17,28 +17,35 @@
     section.about ul article {
         width: 45%;
     }
-
+    
     article.cv ul {
         flex-direction: row;
     }
     article.cv ul li {
         width: 40%;
     }
-
+    
     section.diploms {
-        width: 70%;
+        width: 80%;
     }
     section.diploms ul {
         grid-template-columns: 1fr 1fr;
         gap: 4em;
     }
-
+    
     section h1 {
         font-size: 3em;
     }
-
+    
     div.time {
         width: fit-content;
+    }
+    
+    section.passions ul {
+        gap: 4em;
+    }
+    section.passions article {
+        width: 30%;
     }
 }
 
@@ -46,23 +53,33 @@
     section {
         gap: 2em;
     }
-
+    
     article.cv ul {
         flex-direction: column;
         align-items: center;
     }
-
+    
     article.cv ul li {
         width: 100%;
     }
-
+    
     section.diploms ul {
         grid-template-columns: 1fr;
         gap: 2em;
     }
-
+    
     section h1 {
         font-size: 2em;
+    }
+    
+    section.passions ul {
+        gap: 2em;
+    }
+    section.passions article {
+        width: 100%;
+    }
+    section.passions p {
+        font-size: 1.5em;
     }
 }
 
@@ -167,16 +184,6 @@ article h1 {
     font-size: 2em;
 }
 
-div.time {
-    user-select: none;
-    border-radius: 16px;
-    background-color: var(--color-orange);
-    color: var(--color-dark-blue);
-    padding: 1em;
-    font-weight: bold;
-    text-align: center;
-}
-
 section.diploms ul {
     display: grid;
 }
@@ -185,4 +192,26 @@ section.diploms article {
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+
+section.passions ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section.passions article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+}
+section.passions article img {
+    height: 5em;
+    filter: brightness(0) invert(1);
+}
+section.passions article h3 {
+    color: var(--color-orange);
+    font-size: 1.5em;
 }

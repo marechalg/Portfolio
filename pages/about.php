@@ -109,6 +109,42 @@
             </ul>
         </section>
 
+        <section class="passions">
+            <h1>Passions</h1>
+
+            <ul>
+                <article>
+                    <img src="/assets/icons/dev.svg">
+                    <h3>Programmation</h3>
+                    <p>Développement de scripts et applications, exploration de nouveaux langages et frameworks</p>
+                </article>
+
+                <article>
+                    <img src="/assets/icons/music.svg">
+                    <h3>Musique</h3>
+                    <p>Pratique d'euphonium depuis plus de 10 ans, musicien dans l'Orchestre d'Harmonie de Saint-Brieuc</p>
+                </article>
+
+                <article>
+                    <img src="/assets/icons/cpu.svg">
+                    <h3>Hardware</h3>
+                    <p>Assemblage et optimisation de systèmes, exploration des nouvelles technologies</p>
+                </article>
+
+                <article>
+                    <img src="/assets/icons/triathlon.svg">
+                    <h3>Triathlon</h3>
+                    <p>Récemment lancé dans le triathlon pour repousser mes limites et découvrir de nouveaux défis d'endurance</p>
+                </article>
+
+                <article>
+                    <img src="/assets/icons/simracing.svg">
+                    <h3>Sim-Racing</h3>
+                    <p>Courses sur simulateur automobile avec analyse de télémétries pour optimiser les performances</p>
+                </article>
+            </ul>
+        </section>
+
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/up.php' ?>
     </main>
 

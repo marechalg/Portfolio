@@ -99,7 +99,7 @@ button {
 article {
     background-color: var(--color-blue);
     border: solid 3px var(--color-orange);
-    border-radius: 16px;
+    border-radius: 32px;
     padding: 1em;
 }
 
@@ -220,4 +220,14 @@ dialog:not([open])::backdrop {
 dialog iframe {
     width: 100%;
     height: 100%;
+}
+
+div.time {
+    user-select: none;
+    border-radius: 32px;
+    background-color: var(--color-orange);
+    color: var(--color-dark-blue);
+    padding: 1em;
+    font-weight: bold;
+    text-align: center;
 }
