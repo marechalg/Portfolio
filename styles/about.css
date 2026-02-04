@@ -215,3 +215,20 @@ section.passions article h3 {
     color: var(--color-orange);
     font-size: 1.5em;
 }
+
+section.competences ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4em;
+}
+section.competences div {
+    background-image: linear-gradient(45deg, var(--color-blue), var(--color-dark-blue), var(--color-orange));
+    border-radius: 32px;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+section.competences div:hover {
+    filter: invert(1);
+}

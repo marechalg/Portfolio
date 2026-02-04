@@ -145,6 +145,23 @@
             </ul>
         </section>
 
+        <section class="competences">
+            <h1>Compétences Clés</h1>
+
+            <ul>
+                <div>C</div>
+                <div>Java</div>
+                <div>Node.js</div>
+                <div>PHP</div>
+                <div>Vue.js</div>
+                <div>Nuxt.js</div>
+                <div>PostgreSQL</div>
+                <div>MySQL</div>
+            </ul>
+
+            <button id="more">Voir Plus</button>
+        </section>
+
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/up.php' ?>
     </main>
 
@@ -153,6 +170,7 @@
     <script src="/scripts/parallaxe.js"></script>
     <script src="/scripts/up.js"></script>
     <script src="/scripts/cv.js"></script>
+    <script src="/scripts/more.js"></script>
 </body>
 
 </html>
