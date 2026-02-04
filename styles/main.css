@@ -97,7 +97,7 @@ button {
 }
 
 article {
-    background-color: var(--color-blue);
+    background-image: linear-gradient(45deg, var(--color-blue), var(--color-dark-blue));
     border: solid 3px var(--color-orange);
     border-radius: 32px;
     padding: 1em;

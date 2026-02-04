@@ -47,6 +47,11 @@
     section.passions article {
         width: 30%;
     }
+
+    section.competences ul {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4em;
+    }
 }
 
 @media screen and (orientation: portrait), screen and (max-width: 950px) {
@@ -80,6 +85,11 @@
     }
     section.passions p {
         font-size: 1.5em;
+    }
+
+    section.competences ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
     }
 }
 
@@ -218,17 +228,32 @@ section.passions article h3 {
 
 section.competences ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 4em;
 }
+
 section.competences div {
-    background-image: linear-gradient(45deg, var(--color-blue), var(--color-dark-blue), var(--color-orange));
+    position: relative;
+    background-image: linear-gradient(45deg, var(--color-blue), var(--color-dark-blue));
     border-radius: 32px;
     padding: 1em;
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
+    border: solid 3px var(--color-orange);
+    isolation: isolate;
+    user-select: none;
 }
-section.competences div:hover {
-    filter: invert(1);
+
+section.competences div::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 29px;
+    background-image: linear-gradient(220deg, var(--color-blue), var(--color-dark-blue));
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: -1;
+}
+
+section.competences div:hover::before {
+    opacity: 1;
 }
