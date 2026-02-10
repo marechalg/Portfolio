@@ -30,7 +30,7 @@
 
                     <p>Étudiant en BUT Informatique</p>
 
-                    <p>Passioné par le développement et l'optimisation</p>
+                    <p>Passioné par le développement et l'optimisation de systèmes</p>
                 </article>
 
                 <article>
