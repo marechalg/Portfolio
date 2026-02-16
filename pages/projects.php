@@ -74,6 +74,35 @@
                     <button>En savoir plus</button>
                 </article>
 
+                <article>
+                    <figure>
+                        <img src="/assets/icons/roman.svg" alt="roman">
+                        <figcaption>Roman</figcaption>
+                    </figure>
+                    <p>Simple extension chrome pour convertir tous les nombres en chiffres romains</p>
+                    <h3>Technologies Associées</h3>
+                    <div>
+                        <div>JavaScript</div>
+                        <div>HTML / CSS</div>
+                    </div>
+                    <button>En savoir plus</button>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="/assets/icons/ddos.png" alt="ddos">
+                        <figcaption>Outil de test de charge et robustesse</figcaption>
+                    </figure>
+                    <p>Outil de simulation DDoS contrôlée, avec métriques détaillées de performances et de résilience du serveur</p>
+                    <h3>Technologies Associées</h3>
+                    <div>
+                        <div>C</div>
+                        <div>WRK</div>
+                        <div>Cybersécurité</div>
+                    </div>
+                    <button>En savoir plus</button>
+                </article>
+
                 <!-- <article>
                     <figure>
                         <img src="/assets/icons/globe.svg" alt="globe">
@@ -207,6 +236,38 @@
                         <div>PHP</div>
                         <div>Bash</div>
                         <div>Docker</div>
+                    </div>
+                    <button>En savoir plus</button>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="/assets/icons/ticket.svg" alt="ticket">
+                        <figcaption>Ticketing</figcaption>
+                    </figure>
+                    <p>Gestion des tickets (CRUD) afin de centraliser les demandes et d’en suivre l’avancement</p>
+                    <h3>Technologies Associées</h3>
+                    <div>
+                        <div>Python</div>
+                        <div>SQL</div>
+                        <div>Git</div>
+                        <div>POO</div>
+                        <div>Tests Unitaires</div>
+                    </div>
+                    <button>En savoir plus</button>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="/assets/icons/graph.svg" alt="graph">
+                        <figcaption>Alogirthme de Dijkstra</figcaption>
+                    </figure>
+                    <p>Représentation d'algorithmes de parcours de graphes et d'apprentissage automatique</p>
+                    <h3>Technologies Associées</h3>
+                    <div>
+                        <div>Python</div>
+                        <div>Graphes</div>
+                        <div>Machine Learning</div>
                     </div>
                     <button>En savoir plus</button>
                 </article>
