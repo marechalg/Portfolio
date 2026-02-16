@@ -103,7 +103,7 @@
                     <button>En savoir plus</button>
                 </article>
 
-                <!-- <article>
+                <article>
                     <figure>
                         <img src="/assets/icons/globe.svg" alt="globe">
                         <figcaption>Interchat</figcaption>
@@ -116,7 +116,7 @@
                         <div>discord.js</div>
                     </div>
                     <button>En savoir plus</button>
-                </article> -->
+                </article>
             </ul>
         </section>
 
