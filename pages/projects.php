@@ -31,7 +31,7 @@
                         <img src="/assets/icons/flag.svg" alt="flag">
                         <figcaption>Countrydex</figcaption>
                     </figure>
-                    <p>Bot Discord gamifié : capturez des drapeaux en identifiant les pays le plus vite possible. Système de collection, classement et statistiques intégrés</p>
+                    <p>Bot Discord gamifié : capturez des drapeaux en identifiant les pays le plus vite possible. Systèmes de collection, classement et statistiques intégrés</p>
                     <h3>Technologies Associées</h3>
                     <div>
                         <div>Node.js</div>
