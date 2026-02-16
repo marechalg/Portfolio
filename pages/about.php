@@ -37,10 +37,10 @@
                     <h1>À Propos de Moi</h1>
 
                     <h2>Parcours</h2>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Étudiant en deuxième année de BUT Informatique à l'Université de Rennes, je me spécialise dans le développement logiciel et l'optimisation système. Ma passion pour la programmation m'a conduit à explorer diverses technologies et langages, avec un intérêt particulier pour les scripts d'automatisation et l'amélioration des performances.</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Étudiant en deuxième année de BUT Informatique à l'IUT de Lannion, je me spécialise dans le développement logiciel et l'optimisation système. Ma passion pour la programmation m'a conduit à explorer diverses technologies et langages, avec un intérêt particulier pour les scripts d'automatisation et l'amélioration des performances.</p>
                 
                     <h2>Profil</h2>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Rigoureux et persévérant, j'aborde chaque projet avec méthodologie et créativité. Je recherche actuellement une alternance en développement et optimisation logicielle pour approfondir mes compétences techniques tout en contribuant à des projets concrets.</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Rigoureux et persévérant, j'aborde chaque projet avec méthodologie et créativité. Je recherche actuellement un stage et une alternance en développement et optimisation logicielle pour approfondir mes compétences techniques tout en contribuant à des projets concrets.</p>
                 
                     <h2>Objectifs</h2>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;À long terme, mon objectif est d'intégrer une école d'ingénieur en cybersécurité pour me spécialiser dans ce domaine qui me passionne. Je souhaite développer mes compétences en sécurité informatique et contribuer à la protection des systèmes d'information dans un monde de plus en plus connecté.</p>
