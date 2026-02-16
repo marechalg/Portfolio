@@ -37,7 +37,7 @@
                     <h1>À Propos de Moi</h1>
 
                     <h2>Parcours</h2>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Étudiant en deuxième année de BUT Informatique à l'IUT de Lannion, je me spécialise dans le développement logiciel et l'optimisation système. Ma passion pour la programmation m'a conduit à explorer diverses technologies et langages, avec un intérêt particulier pour les scripts d'automatisation et l'amélioration des performances.</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Étudiant en 2<sup>ème</sup> année de BUT Informatique à l'IUT de Lannion, je me spécialise dans le développement logiciel et l'optimisation système. Ma passion pour la programmation m'a conduit à explorer diverses technologies et langages, avec un intérêt particulier pour les scripts d'automatisation et l'amélioration des performances.</p>
                 
                     <h2>Profil</h2>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;Rigoureux et persévérant, j'aborde chaque projet avec méthodologie et créativité. Je recherche actuellement un stage et une alternance en développement et optimisation logicielle pour approfondir mes compétences techniques tout en contribuant à des projets concrets.</p>
