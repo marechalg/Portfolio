@@ -1,0 +1,157 @@
+/*********************/
+/* IMPORT STATEMENTS */
+/*********************/
+
+@import url(/styles/colors.css);
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+@media screen and (orientation: landscape) and (min-width: 950px) {
+    main {
+        gap: 4em;
+    }
+
+    section {
+        width: 80%;
+    }
+
+    section ul {
+        grid-template-columns: 1fr 1fr;
+        gap: 4em;
+    }
+
+    article {
+        gap: 2em;
+    }
+
+    article button {
+       max-width: fit-content;
+    }
+}
+
+@media screen and (orientation: portrait), screen and (max-width: 950px) {
+    main {
+        gap: 2em;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    section ul {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+    article {
+        gap: 1em;
+    }
+}
+
+/*********/
+/* STYLE */
+/*********/
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > h1 {
+    color: var(--color-orange);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+section ul {
+    width: 100%;
+    display: grid;
+}
+
+article {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+img {
+    height: 2em;
+    filter: brightness(0) invert(1);
+}
+
+figcaption {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+article > div {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    gap: 1em;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+article > div::-webkit-scrollbar {
+    display: none;
+}
+
+article > div div {
+    position: relative;
+    background-image: linear-gradient(45deg, var(--color-blue), var(--color-dark-blue));
+    border-radius: 32px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    border: solid 3px var(--color-orange);
+    isolation: isolate;
+    user-select: none;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+article > div div::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 29px;
+    background-image: linear-gradient(220deg, var(--color-blue), var(--color-dark-blue));
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: -1;
+}
+
+article > div div:hover::before {
+    opacity: 1;
+}

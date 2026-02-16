@@ -153,13 +153,13 @@
                 <div>Java</div>
                 <div>Node.js</div>
                 <div>PHP</div>
-                <div>Vue.js</div>
+                <div>Rust</div>
                 <div>Nuxt.js</div>
                 <div>PostgreSQL</div>
-                <div>MySQL</div>
+                <div>MongoDB</div>
                 <div>Scrum</div>
-                <div>TypeScript</div>
-                <div>HTML/CSS</div>
+                <div>Docker</div>
+                <div>Git</div>
                 <div>Apache</div>
             </ul>
         </section>

@@ -9,13 +9,3 @@ modalCV.addEventListener('click', e => {
         modalCV.close();
     }
 })
-
-window.addEventListener('keydown', e => {
-    modalCV.close();
-})
-document.addEventListener('keydown', e => {
-    modalCV.close();
-})
-document.getElementById('pdf').addEventListener('keydown', e => {
-    modalCV.close();
-})
