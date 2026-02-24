@@ -85,12 +85,12 @@ section ul {
 
 article {
     padding: 2em;
-    display: flex;
+    display: none;
     flex-direction: column;
     min-width: 0;
 }
 
-figure {
+article figure {
     display: flex;
     align-items: center;
     gap: 1em;
@@ -154,4 +154,40 @@ article > div div::before {
 
 article > div div:hover::before {
     opacity: 1;
+}
+
+section > figure {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    user-select: none;
+    max-width: fit-content;
+}
+
+section > figure:hover {
+    color: var(--color-orange);
+    cursor: pointer;
+}
+section > figure:hover svg path {
+    fill: var(--color-orange);
+}
+
+section > figure svg {
+    transform: rotate(-180deg);
+    height: 2em;
+    width: 2em;
+}
+section > figure svg.rotated {
+    transform: rotate(0deg);
+    height: 2em;
+    width: 2em;
+}
+section > figure svg path {
+    fill: var(--color-white);
+    filter: brightness(0.8);
+}
+
+article:hover {
+    transform: translate(0, 1em);
+    box-shadow: 0.5em -1em 1.5em rgba(var(--color-orange-rgb), 0.2);
 }

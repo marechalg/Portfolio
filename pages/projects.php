@@ -23,7 +23,10 @@
         <h1>Mes Projets</h1>
 
         <section>
-            <h2>Personnels</h2>
+            <figure class="wrapper" id="perso">
+                <?php require $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/arrow.php' ?>
+                <h2>Personnels</h2>
+            </figure>
 
             <ul>
                 <article>
@@ -40,6 +43,10 @@
                         <div>discord.js</div>
                     </div>
                     <button>En savoir plus</button>
+
+                    <dialog>
+                        
+                    </dialog>
                 </article>
 
                 <article>
@@ -90,6 +97,23 @@
 
                 <article>
                     <figure>
+                        <img src="/assets/icons/syncCount.svg" alt="syncCount">
+                        <figcaption>syncCount</figcaption>
+                    </figure>
+                    <p>Compteur collaboratif synchronisé entre les utilisateurs avec un système de classements et statistiques</p>
+                    <h3>Technologies Associées</h3>
+                    <div>
+                        <div>TypeScript</div>
+                        <div>JavaScript</div>
+                        <div>Web Sockets</div>
+                        <div>HTML / CSS</div>
+                        <div>JSON</div>
+                    </div>
+                    <button>En savoir plus</button>
+                </article>
+
+                <article>
+                    <figure>
                         <img src="/assets/icons/ddos.png" alt="ddos">
                         <figcaption>Outil de test de charge et robustesse</figcaption>
                     </figure>
@@ -121,7 +145,10 @@
         </section>
 
         <section>
-            <h2>Études</h2>
+            <figure class="wrapper" id="study">
+                <?php require $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/arrow.php' ?>
+                <h2>Études</h2>
+            </figure>
 
             <ul>
                 <article>
@@ -281,6 +308,7 @@
 
     <script src="/scripts/up.js"></script>
     <script src="/scripts/horitical.js"></script>
+    <script src="/scripts/wrapper.js"></script>
 </body>
 
 </html>
