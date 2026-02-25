@@ -108,6 +108,7 @@
                         <div>Web Sockets</div>
                         <div>HTML / CSS</div>
                         <div>JSON</div>
+                        <div>CI / CD</div>
                     </div>
                     <button>En savoir plus</button>
                 </article>
