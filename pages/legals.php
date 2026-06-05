@@ -115,6 +115,8 @@
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/up.php' ?>
     </main>
 
+    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/menu.php' ?>
+
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/footer.php' ?>
 
     <script src="/scripts/legals.js" type="module"></script>

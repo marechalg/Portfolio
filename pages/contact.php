@@ -20,7 +20,21 @@
     <main>
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/aside.php' ?>
 
-        <form action="/controllers/mail.php" method="POST">
+        <section>
+            <article>
+                <h1>Adresse E-Mail</h1>
+
+                <strong title="Copier" class="copy">guewen.marechal@etudiant.univ-rennes.fr</strong>
+            </article>
+
+            <article>
+                <h1>Numéro de téléphone</h1>
+
+                <strong title="Copier" class="copy">07 . 80 . 46 . 69 . 62</strong>
+            </article>
+        </section>
+
+        <!-- <form action="/controllers/mail.php" method="POST">
             <section>
                 <label for="mail">E-Mail</label>
                 <input type="email" name="mail" id="mail">
@@ -49,14 +63,17 @@
             <?php endif; ?>
             
             <input type="submit" value="Envoyer">
-        </form>
+        </form> -->
 
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/up.php' ?>
     </main>
 
+    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/menu.php' ?>
+
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/footer.php' ?>
 
     <script src="/scripts/up.js"></script>
+    <script src="/scripts/clickToCopy.js"></script>
 </body>
 
 </html>

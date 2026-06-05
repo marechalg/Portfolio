@@ -11,7 +11,7 @@
             <?php $class = $currentPage == 'contact.php' ? 'here' : ''; ?>
             <li><a href="/contact" class="<?php echo $class ?>">Contact</a></li>
         </ul>
-        <div class="burger">
+        <div id="burger">
             <div></div>
             <div></div>
             <div></div>
@@ -20,3 +20,5 @@
         </div>
     </nav>
 </header>
+
+<script src="/scripts/burger.js" defer></script>

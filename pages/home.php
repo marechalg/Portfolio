@@ -37,6 +37,8 @@
         </section>
     </main>
 
+    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/menu.php' ?>
+
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/footer.php' ?>
 
     <script src="/scripts/up.js"></script>

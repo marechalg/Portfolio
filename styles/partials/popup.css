@@ -1,0 +1,105 @@
+/*********************/
+/* IMPORT STATEMENTS */
+/*********************/
+
+@import url(/styles/colors.css);
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+@media screen and (orientation: landscape) and (min-width: 950px) {
+    ul.links {
+        flex-direction: row;
+        width: 100%;
+        justify-content: end;
+    }
+    
+    dialog {
+        max-height: 80vh;
+    }
+}
+
+@media screen and (orientation: portrait), screen and (max-width: 950px) {
+    ul.links {
+        width: 100%;
+        flex-direction: column;
+    }
+    ul.links li {
+        width: 100%;
+    }
+    ul.links li figure {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/*********/
+/* STYLE */
+/*********/
+
+dialog {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    outline: none;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+dialog::-webkit-scrollbar {
+    display: none;
+}
+
+dialog ul {
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+}
+
+dialog ul.links {
+    display: flex;
+    gap: 1em;
+}
+
+dialog figure {
+    padding: 1em;
+    background-color: var(--color-orange);
+    color: var(--color-dark-blue);
+    border-radius: 8px;
+    font-weight: bold;
+    width: fit-content;
+    outline: solid 3px var(--color-orange);
+    outline-offset: -3px;
+}
+dialog figure:hover {
+    cursor: pointer;
+    background-color: var(--color-dark-blue);
+    color: var(--color-orange);
+}
+
+dialog figure svg {
+    height: 2em;
+    width: 2em;
+}
+dialog figure svg path {
+    fill: var(--color-dark-blue);
+}
+dialog figure:hover svg path {
+    fill: var(--color-orange);
+}
+
+dialog div {
+    color: var(--color-white);
+}
+
+dialog div h3 {
+    margin: 1em 0 0.5em 0;
+    font-size: 1.5em;
+}
+dialog div table th {
+    text-align: left;
+}

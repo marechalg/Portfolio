@@ -194,11 +194,24 @@ article h1 {
     font-size: 2em;
 }
 
+section.exp {
+    width: 90%;
+}
+section.exp figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}
+section.exp figure img {
+    width: 5em;
+}
+
 section.diploms ul {
     display: grid;
 }
 
-section.diploms article {
+section.diploms article, section.exp article {
     display: flex;
     flex-direction: column;
     gap: 1em;

@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/projects.css">
+    <link rel="stylesheet" href="/styles/partials/popup.css">
 </head>
 
 <body>
@@ -42,28 +43,79 @@
                         <div>JSON</div>
                         <div>discord.js</div>
                     </div>
-                    <button>En savoir plus</button>
-
+                    <!-- <button>En savoir plus</button> -->
+<!--
                     <dialog>
-                        
+                        <h1>Countrydex</h1>
+
+                        <template md>
+Un bot Discord qui transforme la géographie en un jeu de collection. Les utilisateurs chassent les drapeaux en trouvant son origine et sont intégrés dans des classments de compétitivité.
+
+### 🎯 Principe
+Countrydex fait apparaître des drapeaux du monde entier dans chaque serveur. Il appartient ensuite aux membres d'identifier le drapeau et de le capturer en premier afin de construire leurs collections et de grimper dans les classements.
+
+### ✨ Fonctionnaliés
+- 🏳️ **Drapeau qui apparaît automatiquement** - Nouveau drapeau toutes les heures à :30
+- 🎮 **Interfaces intéractives** - Popups et boutons intégrés à Discord pour toutes les actions
+- 🏆 **Leaderboard global** - Les utilisateurs rivalisent entre eux sur le taux de complétion, la taille de la collection et la vitesse de capture
+- 📊 **Statistiques** - Possibilité de traquer sa progression et bien plus avec la commande `/dex`
+- 💾 **Sécurité des données** - Les données sont anonymisées, et sont sauvegardées quotidiennement
+
+### 🛠️ Commandes
+| Commande | Description |
+|---------|-------------|
+| `/help` | Affiche les commandes intégrées au bot |
+| `/dex` | Affiche la collection et des statistiques |
+| `/lb` | Affiche les classements |
+| `/clear [1-99]` | Supprimer un nombre de messages (exige la permission `MANAGE_MESSAGES`) |
+| `/ping` | Affiche le status du bot |
+| `/reset` | Réinitialiser la progresssion (⚠️ irreversible pour le moment) |
+
+### 🚀 Technologes
+- **Backend** : Node.js
+- **Frontend** : discord.js
+- **Base de données** : PostgreSQL
+- **Librairies** :
+    - node-vibrant (extraction de couleurs)
+    - moment (gestion du temps)
+    - axios (requêtes API / HTTP)
+    - deepl-node (traduction)
+- **Hosting** : Raspberry Pi 5 (8GB)
+                        </template>
+                        <div></div>
+
+                        <ul class="links">
+                            <li>
+                                <figure onclick="window.open('https://discord.com/oauth2/authorize?client_id=1342612831647957063&permissions=125968&integration_type=0&scope=bot+applications.commands', '_blank').focus()">
+                                    <?php // require $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/discord.php' ?>
+                                    <figcaption>Essayer</figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure onclick="window.open('https://github.com/marechalg/countrydex', '_blank').focus()">
+                                    <?php // require $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/github.php' ?>
+                                    <figcaption>Dépôt</figcaption>
+                                </figure>
+                            </li>
+                        </ul>
                     </dialog>
+-->
                 </article>
 
                 <article>
                     <figure>
-                        <img src="/assets/icons/cards.svg" alt="cards">
-                        <figcaption>Wild West Saloon</figcaption>
+                        <img src="/assets/icons/golden_jack.svg" alt="Golden Jack">
+                        <figcaption>Golden Jack</figcaption>
                     </figure>
-                    <p>Jeu de BlackJack dans une application web, proposant une interface moderne et ergonomique, tout en conservant un esprit de Salon du Far West</p>
+                    <p>Jeu de BlackJack proposant une approche moderne et ludique, tout en conservant un esprit de simulation</p>
                     <h3>Technologies Associées</h3>
                     <div>
-                        <div>PHP</div>
-                        <div>PostgreSQL</div>
                         <div>TypeScript</div>
-                        <div>SCSS</div>
-                        <div>POO</div>
+                        <div>Nuxt.js</div>
+                        <div>CLI</div>
+                        <div>CI / CD</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
 
                 <article>
@@ -78,7 +130,7 @@
                         <div>JavaScript</div>
                         <div>HTML / CSS</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
 
                 <article>
@@ -92,7 +144,7 @@
                         <div>JavaScript</div>
                         <div>HTML / CSS</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
 
                 <article>
@@ -104,13 +156,11 @@
                     <h3>Technologies Associées</h3>
                     <div>
                         <div>TypeScript</div>
-                        <div>JavaScript</div>
                         <div>Web Sockets</div>
                         <div>HTML / CSS</div>
-                        <div>JSON</div>
                         <div>CI / CD</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
 
                 <article>
@@ -123,24 +173,23 @@
                     <div>
                         <div>C</div>
                         <div>WRK</div>
-                        <div>Cybersécurité</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
 
                 <article>
                     <figure>
-                        <img src="/assets/icons/globe.svg" alt="globe">
-                        <figcaption>Interchat</figcaption>
+                        <img src="/assets/icons/alive.png" alt="alive">
+                        <figcaption>Alive Bot</figcaption>
                     </figure>
-                    <p>Bot Discord permettant l'inter-communication entre plusieurs serveurs, les liaisons étant entièrement configurable</h3>
+                    <p>Bot Discord d'assistance évenementiel pour le BDE du département Informatique de l'IUT de Lannion</p>
                     <h3>Technologies Associées</h3>
                     <div>
-                        <div>Node.js</div>
-                        <div>JSON</div>
+                        <div>TypeScript</div>
                         <div>discord.js</div>
+                        <div>CI / CD</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
             </ul>
         </section>
@@ -164,13 +213,11 @@
                         <div>MySQL</div>
                         <div>SCSS</div>
                         <div>TypeScript</div>
-                        <div>Docker</div>
-                        <div>Git</div>
                         <div>C</div>
                         <div>Sockets</div>
                         <div>Scrum</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
 
                 <article>
@@ -183,12 +230,11 @@
                     <div>
                         <div>Java</div>
                         <div>JavaFX</div>
-                        <div>POO</div>
                         <div>FXML</div>
                         <div>CSS</div>
                         <div>Gantt</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
 
                 <article>
@@ -203,7 +249,7 @@
                         <div>Doxygen</div>
                         <div>Cahier de Tests</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
 
                 <article>
@@ -215,9 +261,8 @@
                     <h3>Technologies Associées</h3>
                     <div>
                         <div>C</div>
-                        <div>Git</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
 
                 <article>
@@ -235,7 +280,7 @@
                         <div>HMTL / CSS</div>
                         <div>JavaScript</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
 
                 <article>
@@ -250,7 +295,7 @@
                         <div>JavaScript</div>
                         <div>Figma</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
 
                 <article>
@@ -265,7 +310,7 @@
                         <div>Bash</div>
                         <div>Docker</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
 
                 <article>
@@ -278,11 +323,9 @@
                     <div>
                         <div>Python</div>
                         <div>SQL</div>
-                        <div>Git</div>
-                        <div>POO</div>
                         <div>Tests Unitaires</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
 
                 <article>
@@ -297,7 +340,7 @@
                         <div>Graphes</div>
                         <div>Machine Learning</div>
                     </div>
-                    <button>En savoir plus</button>
+                    <!-- <button>En savoir plus</button> -->
                 </article>
             </ul>
         </section>
@@ -305,11 +348,14 @@
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/up.php' ?>
     </main>
 
+    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/menu.php' ?>
+
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/footer.php' ?>
 
     <script src="/scripts/up.js"></script>
     <script src="/scripts/horitical.js"></script>
     <script src="/scripts/wrapper.js"></script>
+    <script type="module" src="/scripts/popup.js"></script>
 </body>
 
 </html>

@@ -73,3 +73,7 @@ aside a:hover svg path {
     color: var(--color-orange);
     fill: var(--color-orange);
 }
+
+aside.hidden {
+    display: none;
+}
