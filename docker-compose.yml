@@ -1,0 +1,12 @@
+services:
+  web:
+    image: ghcr.io/${REPO_OWNER}/portfolio:latest
+    restart: unless-stopped
+    expose:
+      - "80"
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel run
+    environment:
+      - TUNNEL_TOKEN=${TUNNEL_TOKEN}
