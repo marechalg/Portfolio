@@ -22,30 +22,32 @@ jobs:
                     -t $REPO:$VERSION \
                     -t $REPO:latest \
                     --push .
+            
+            - name: Install cloudflare
+              run: |
+                curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb -o cloudflared.deb
+                sudo dpkg -i cloudflared.deb
 
-            - name: Copy compose to host
-              uses: appleboy/scp-action@v1
-              with:
-                host: ${{ secrets.PI_HOST }}
-                username: ${{ secrets.PI_USER }}
-                key: ${{ secrets.PI_SSH }}
-                port: 2222
-                source: docker-compose.yml
-                target: /opt/portfolio
+            - name: Setup SSH over Cloudflare
+              run: |
+                mkdir -p ~/.ssh
+                echo "${{ secrets.PI_SSH }}" > ~/.ssh/deploy_key
+                chmod 600 ~/.ssh/deploy_key
+                cat > ~/.ssh/config <<EOF
+                Host pi
+                  HostName ${{ secrets.PI_HOST }}
+                  User ${{ secrets.PI_USER }}
+                  IdentityFile ~/.ssh/deploy_key
+                  ProxyCommand cloudflared access ssh --service-token-id ${{ secrets.CF_ACCESS_CLIENT_ID }} --service-token-secret ${{ secrets.CF_ACCESS_CLIENT_SECRET }} --hostname %h
+                  StrictHostKeyChecking no
+                  UserKnownHostsFile /dev/null
+                EOF
+                chmod 600 ~/.ssh/config
 
-            - name: Deploy via SSH
-              uses: appleboy/ssh-action@v1
-              with:
-                host: ${{ secrets.PI_HOST }}
-                username: ${{ secrets.PI_USER }}
-                key: ${{ secrets.PI_SSH }}
-                port: 2222
-                script: |
-                    cd /opt/portfolio
-                    cat > .env <<EOF
-                    REPO_OWNER=${{ github.repository_owner }}
-                    TUNNEL_TOKEN=${{ secrets.TUNNEL_TOKEN }}
-                    EOF
-                    echo ${{ secrets.GHCR_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-                    docker compose pull
-                    docker compose up -d
+            - name: Copy compose & deploy
+              run: |
+                scp docker-compose.yml pi:/opt/portfolio/docker-compose.yml
+                ssh pi "cd /opt/portfolio && \
+                  printf 'REPO_OWNER=%s\nTUNNEL_TOKEN=%s\n' '${{ github.repository_owner }}' '${{ secrets.TUNNEL_TOKEN }}' > .env && \
+                  echo '${{ secrets.GHCR_TOKEN }}' | docker login ghcr.io -u '${{ github.actor }}' --password-stdin && \
+                  docker compose pull && docker compose up -d"
