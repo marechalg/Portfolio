@@ -44,6 +44,17 @@ jobs:
                 EOF
                 chmod 600 ~/.ssh/config
 
+            - name: Debug connection
+              env:
+                CF_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
+                CF_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
+              run: |
+                echo "cloudflared: $(which cloudflared || echo MISSING)"
+                cloudflared --version || true
+                echo "CF_ID length: ${#CF_ID}"
+                echo "CF_SECRET length: ${#CF_SECRET}"
+                ssh -v pi "echo CONNECTED" || true
+
             - name: Copy compose & deploy
               run: |
                 scp docker-compose.yml pi:/opt/portfolio/docker-compose.yml
