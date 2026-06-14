@@ -1,1 +1,1 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/contact.php'; ?>
+<?php require_once __DIR__ . '/pages/contact.php'; ?>

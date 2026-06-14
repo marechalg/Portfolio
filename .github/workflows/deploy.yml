@@ -44,34 +44,6 @@ jobs:
                 EOF
                 chmod 600 ~/.ssh/config
 
-            - name: Debug connection
-              env:
-                CF_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
-                CF_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
-              run: |
-                echo "cloudflared: $(which cloudflared || echo MISSING)"
-                cloudflared --version || true
-                echo "CF_ID length: ${#CF_ID}"
-                echo "CF_SECRET length: ${#CF_SECRET}"
-                ssh -v pi "echo CONNECTED" || true
-            
-            - name: Debug cloudflared direct
-              env:
-                TUNNEL_SERVICE_TOKEN_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
-                TUNNEL_SERVICE_TOKEN_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
-              run: timeout 15 cloudflared access ssh --hostname ${{ secrets.PI_HOST }} --log-level debug 2>&1 | head -30 || true
-
-            - name: Debug token
-              env:
-                CF_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
-                CF_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
-              run: |
-                echo "ID length: ${#CF_ID}, ends with: '${CF_ID: -7}'"
-                echo "SECRET length: ${#CF_SECRET}"
-                curl -s -o /dev/null -w "Access HTTP: %{http_code}\n" https://ssh.guewen-marechal.ovh \
-                  -H "CF-Access-Client-Id: $CF_ID" \
-                  -H "CF-Access-Client-Secret: $CF_SECRET"
-
             - name: Copy compose & deploy
               env:
                 TUNNEL_SERVICE_TOKEN_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
