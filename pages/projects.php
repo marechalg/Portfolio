@@ -16,16 +16,16 @@
 </head>
 
 <body>
-    <?php require_once __DIR__ . '/pages/partials/header.php'?>
+    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/header.php'?>
 
     <main>
-        <?php require_once __DIR__ . '/pages/partials/aside.php' ?>
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/aside.php' ?>
 
         <h1>Mes Projets</h1>
 
         <section>
             <figure class="wrapper" id="perso">
-                <?php require __DIR__ . '/pages/partials/arrow.php' ?>
+                <?php require $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/arrow.php' ?>
                 <h2>Personnels</h2>
             </figure>
 
@@ -87,13 +87,13 @@ Countrydex fait apparaître des drapeaux du monde entier dans chaque serveur. Il
                         <ul class="links">
                             <li>
                                 <figure onclick="window.open('https://discord.com/oauth2/authorize?client_id=1342612831647957063&permissions=125968&integration_type=0&scope=bot+applications.commands', '_blank').focus()">
-                                    <?php // require __DIR__ . '/pages/partials/discord.php' ?>
+                                    <?php // require $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/discord.php' ?>
                                     <figcaption>Essayer</figcaption>
                                 </figure>
                             </li>
                             <li>
                                 <figure onclick="window.open('https://github.com/marechalg/countrydex', '_blank').focus()">
-                                    <?php // require __DIR__ . '/pages/partials/github.php' ?>
+                                    <?php // require $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/github.php' ?>
                                     <figcaption>Dépôt</figcaption>
                                 </figure>
                             </li>
@@ -196,7 +196,7 @@ Countrydex fait apparaître des drapeaux du monde entier dans chaque serveur. Il
 
         <section>
             <figure class="wrapper" id="study">
-                <?php require __DIR__ . '/pages/partials/arrow.php' ?>
+                <?php require $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/arrow.php' ?>
                 <h2>Études</h2>
             </figure>
 
@@ -345,12 +345,12 @@ Countrydex fait apparaître des drapeaux du monde entier dans chaque serveur. Il
             </ul>
         </section>
 
-        <?php require_once __DIR__ . '/pages/partials/up.php' ?>
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/up.php' ?>
     </main>
 
-    <?php require_once __DIR__ . '/pages/partials/menu.php' ?>
+    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/menu.php' ?>
 
-    <?php require_once __DIR__ . '/pages/partials/footer.php' ?>
+    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/footer.php' ?>
 
     <script src="/scripts/up.js"></script>
     <script src="/scripts/horitical.js"></script>

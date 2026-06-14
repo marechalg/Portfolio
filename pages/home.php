@@ -15,10 +15,10 @@
 </head>
 
 <body>
-    <?php require_once __DIR__ . '/pages/partials/header.php' ?>
+    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/header.php' ?>
 
     <main>
-        <?php require_once __DIR__ . '/pages/partials/aside.php' ?>
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/aside.php' ?>
 
         <section>
             <article>
@@ -37,9 +37,9 @@
         </section>
     </main>
 
-    <?php require_once __DIR__ . '/pages/partials/menu.php' ?>
+    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/menu.php' ?>
 
-    <?php require_once __DIR__ . '/pages/partials/footer.php' ?>
+    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/pages/partials/footer.php' ?>
 
     <script src="/scripts/up.js"></script>
 </body>
